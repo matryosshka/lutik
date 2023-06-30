@@ -1,0 +1,16 @@
+/* setups */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import "./_media.scss";
+@import "./_layout.scss";
+
+/* blocks */
+@import "./blocks/_header.scss";
+@import "./blocks/_content.scss";
+@import "./blocks/_user.scss";
+@import "./blocks/_sidebar.scss";
+@import "./blocks/_nav.scss";
+@import "./blocks/_user-info.scss";
+@import "./blocks/_avatar.scss";
+@import "./blocks/_button.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_socials.scss";

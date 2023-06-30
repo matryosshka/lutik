@@ -1,0 +1,33 @@
+.nav__list {
+  @include tablets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.nav__list {
+  font-size: 28px;
+}
+
+.nav__item {
+  margin-bottom: 20px;
+  white-space: nowrap;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablets {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.nav__link {
+  &:hover {
+    color: #FFC83D;
+    transition: 0.3s;
+  }
+}

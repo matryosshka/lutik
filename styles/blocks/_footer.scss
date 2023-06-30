@@ -1,0 +1,48 @@
+.footer {
+  grid-area: footer;
+  background: #414141;
+  min-height: 70px;
+  color: #F7630C;
+}
+
+.footer__container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  align-items: center;
+
+  @include tablets {
+    justify-items: center;
+  }
+}
+
+.footer__left {
+  grid-area: left;
+}
+
+.footer__left span {
+  text-shadow: 1px 0 1px #000, 
+  0 1px 1px #000, 
+  -1px 0 1px #000, 
+  0 -1px 1px #000;
+}
+
+.footer__animation {
+  display: inline-block; 
+  transition: 0.3s; 
+ }
+
+ .footer__animation:hover {
+  transform: rotate(3deg) translate(5px);
+ }
+
+.footer__right {
+  grid-area: right;
+  justify-self: right;
+
+  @include tablets {
+    justify-self: initial;
+  }
+}

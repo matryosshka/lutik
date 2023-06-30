@@ -1,0 +1,40 @@
+.content {
+  grid-area: content;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  @include tablets {
+    margin-bottom: 13%;
+  }
+}
+
+.content__container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3.5fr;
+  grid-template-areas: "sidebar maincontent";
+
+  @include tablets {
+    grid-template: 
+    "sidebar" 115px
+    "maincontent" 1fr
+    / 1fr;
+    justify-items: center;
+  }
+
+  @include phones {
+    grid-template: 
+    "sidebar" 145px
+    "maincontent" 1fr
+    / 1fr;
+    justify-items: center;
+  }
+
+  @include small-phones {
+    grid-template: 
+    "sidebar" 185px
+    "maincontent" 1fr
+    / 1fr;
+    justify-items: center;
+  }
+}

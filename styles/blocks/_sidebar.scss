@@ -1,0 +1,7 @@
+.sidebar {
+  grid-area: sidebar;
+
+  @include tablets {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,48 @@
+.user-info {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-areas: "avatar text";
+  grid-gap: 0px 10px;
+
+  @include tablets {
+    grid-template: 
+    "avatar" 235px
+    "text" 1fr
+    / 1fr;
+  }
+
+  @include phones {
+    grid-template: 
+    "avatar" 225px
+    "text" 1fr
+    / 1fr;
+  }
+}
+
+.user-info__avatar {
+  grid-area: avatar;
+  justify-self: center;
+}
+
+.user-info__text > h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+} 
+
+.user-info__text > p {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user-info__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}

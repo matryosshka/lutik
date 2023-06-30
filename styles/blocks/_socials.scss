@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    transition: 0.3s all;
+    opacity: 70%;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.social__item--tg .social__link {
+  background-image: url("../img/icons/t.png");
+}
+
+.social__item--vk .social__link {
+  background-image: url("../img/icons/vk.png");
+}

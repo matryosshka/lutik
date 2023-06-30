@@ -1,0 +1,47 @@
+.header {
+  grid-area: header;
+  background: #FFC83D90;
+  box-shadow: 0 2px 2px 0 rgba(00, 00, 00, .5);
+  font-size: 26px;
+
+  @include tablets {
+    min-height: 140px;
+  }
+}
+
+.header__container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  align-items: center;
+
+  @include tablets {
+    grid-template: 
+    "left" 1fr
+    "right" 1fr
+    / 1fr;
+    justify-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.header__left {
+  grid-area: left;
+}
+
+.header__right {
+  grid-area: right;
+  justify-self: end;
+
+  @include tablets {
+    justify-self: initial;
+  }
+}
+
+.header__right-contacts {
+  &:hover { 
+    border-bottom: 2px dashed;
+  }
+}
